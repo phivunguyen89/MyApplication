@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Problem"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="1. Which of these class is superclass of every class in Java?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、String class"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、Object class"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、Abstract class"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、ArrayList class"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="2. Which of these method of Object class can clone an object?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rg_2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、Objectcopy()"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、copy()"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、 Object clone()"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、 clone()"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="3. Which of these method of Object class is used to obtain class of an object at run time?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、get()"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、 void getclass()"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、 Class getclass()"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、 None of the mentioned"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="4. Which of these keywords can be used to prevent inheritance of a class?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、super"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、constant"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、class"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、final "
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="5. Which of these keywords cannot be used for a class which has been declared final?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、 abstract"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、extends"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、 abstract and extends"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、 none of the mentioned"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tv_bg"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Problem"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/title1"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、Memory address of allocated memory of object"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、NULL"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、Any arbitrary pointer"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、Garbage"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/title2"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rg_2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、class"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、struct"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、int"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、none of the mentioned"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/title3"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、 Box obj = new Box();"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、Box obj = new Box;"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、obj = new Box();"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、new Box obj;"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="4. Which of these operators is used to allocate memory for an object?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、malloc"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、alloc"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、new"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、give "
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="5. Which of these statement is incorrect?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、 Every class must contain a main() method"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、Applets do not require a main() method at all"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、There can be only one main() method in a program"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、main() method must be made public"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tv_bg"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

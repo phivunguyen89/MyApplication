@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Java Programming</string>
+    <string name="ss">Q &amp; A</string>
+    <string name="title1">1.What is the stored in the object obj in following lines of code?</string>
+    <string name="title2">2. Which of these keywords is used to make a class?</string>
+    <string name="title3">3. Which of the following is a valid declaration of an object of class Box?</string>
+</resources>

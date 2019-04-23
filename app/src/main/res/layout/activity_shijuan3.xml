@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Problem"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="1. Which of these keywords are used to define an abstract class?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、abst"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、abstract"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、Abstract"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、abstract class"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="2. Which of these is not abstract?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rg_2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、Thread"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、AbstractList"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、List"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、None of the Mentioned"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="3. If a class inheriting an abstract class does not define all of its function then it will be known as?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、Abstract"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、A simple class"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、Static class"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、None of the mentioned"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="4. Which of these is not a correct statement?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、Every class containing abstract method must be declared abstract"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、Abstract class defines only the structure of the class not its implementation"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、Abstract class can be initiated by new operator"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、Abstract class can be inherited "
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_title5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="5. Which of these packages contains abstract keyword?"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    />
+                <RadioGroup
+                    android:id="@+id/rg_5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_a5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A、java.lang"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_b5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B、java.util"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_c5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C、java.io"
+                        />
+                    <RadioButton
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/rb_d5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="D、java.system"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tv_bg"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
