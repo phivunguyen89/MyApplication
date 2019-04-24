@@ -2,8 +2,10 @@ package com.my.myapplication.activity;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,21 +17,32 @@ public class ResultActivity extends Activity{
     private TextView tv_result;
     private TextView tv_des;
     private int score;
+    private Button btHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        score=getIntent().getIntExtra("score",0);
+        score = getIntent().getIntExtra("score", 0);
 
         initView();
+
+        btHome=findViewById(R.id.btHome);
+        btHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ResultActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initView() {
         iv_back= (ImageView) findViewById(R.id.iv_back);
         tv_result= (TextView) findViewById(R.id.tv_result);
         tv_des= (TextView) findViewById(R.id.tv_des);
+
 
         tv_result.setText("Your score is："+score+".");
         if (score==0){

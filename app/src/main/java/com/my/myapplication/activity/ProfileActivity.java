@@ -1,5 +1,6 @@
 package com.my.myapplication.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,6 +17,8 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView tvEmail;
     private Button btUpdate;
     private String str_name, str_email;
+    private Button btProfileHome;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,18 +30,33 @@ public class ProfileActivity extends AppCompatActivity {
         tvName  =findViewById(R.id.tvName);
         tvEmail =findViewById(R.id.tvEmail);
         btUpdate = findViewById(R.id.btUpdate);
+        btProfileHome = findViewById(R.id.btProfileHome);
+
+
+        btProfileHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 int viewId = v.getId();
                 if(viewId == R.id.btUpdate){
                     str_name = etName.getText().toString().trim();
                     str_email = etEmail.getText().toString().trim();
                     tvName.setText(str_name);
                     tvEmail.setText(str_email);
+
+
                 }
             }
         });
+
     }
+
 }
