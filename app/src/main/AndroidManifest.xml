@@ -37,7 +37,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".activity.ProfileActivity"/>
         <activity android:name=".activity.KeyNoteActivity"/>
         <activity android:name=".activity.VideoActivity"/>
         <activity android:name=".activity.ShiJuanActivity1"/>

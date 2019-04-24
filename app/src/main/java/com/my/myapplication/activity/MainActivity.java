@@ -10,6 +10,7 @@ import com.my.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
     private LinearLayout llLessons;
+    private LinearLayout ll_Profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,15 @@ public class MainActivity extends AppCompatActivity {
 
         initView();
         initEvent();
+
+        ll_Profile = findViewById(R.id.ll_Profile);
+        ll_Profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initEvent() {
@@ -34,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         llLessons=findViewById(R.id.ll_lessons);
+
 
     }
 }

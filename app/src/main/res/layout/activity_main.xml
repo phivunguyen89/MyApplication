@@ -7,8 +7,7 @@
     android:orientation="vertical"
     tools:context=".activity.MainActivity"
     android:background="@color/backgroundcolor"
-    android:padding="10dp"
-    >
+    android:padding="10dp">
 
     <LinearLayout
         android:clipToPadding="false"
@@ -17,9 +16,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_height="100dp">
 
         <LinearLayout
+            android:id="@+id/ll_Profile"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
