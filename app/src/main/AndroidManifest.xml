@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.my.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -30,6 +30,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.QuestionsActivity"></activity>
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,16 +38,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ProgressActivity"/>
-        <activity android:name=".activity.SearchActivity"/>
-        <activity android:name=".activity.ProfileActivity"/>
+        <activity android:name=".activity.ProgressActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.ProfileActivity" />
 
-        <activity android:name=".activity.KeyNoteActivity"/>
-        <activity android:name=".activity.VideoActivity"/>
-        <activity android:name=".activity.ShiJuanActivity1"/>
-        <activity android:name=".activity.ShiJuanActivity2"/>
-        <activity android:name=".activity.ShiJuanActivity3"/>
-        <activity android:name=".activity.ResultActivity"/>
+        <activity android:name=".activity.KeyNoteActivity" />
+        <activity android:name=".activity.VideoActivity" />
+        <activity android:name=".activity.ShiJuanActivity1" />
+        <activity android:name=".activity.ShiJuanActivity2" />
+        <activity android:name=".activity.ShiJuanActivity3" />
+        <activity android:name=".activity.ResultActivity" />
         <activity
             android:name="io.vov.vitamio.activity.InitActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"

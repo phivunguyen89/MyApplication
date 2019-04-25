@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".activity.MainActivity"
     android:background="@color/backgroundcolor"
-    android:padding="10dp">
+    android:padding="0dp">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -15,9 +15,7 @@
         android:gravity="center"
         android:textSize="30dp"
         android:textColor="#fff"
-        android:background="@color/colorAccent"
-
-        />
+        android:background="@color/colorAccent"/>
     <LinearLayout
         android:clipToPadding="false"
         android:gravity = "center"
@@ -161,13 +159,13 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:background="@drawable/circlebackgroundgreen"
-                android:src="@drawable/ic_qa_logo"/>
+                android:src="@drawable/ic_chat_black_22dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/ss"
+                android:text="Questions"
                 android:textColor="#000000"
                 android:textSize="30sp" />
         </LinearLayout>

@@ -1,40 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SearchActivity"
+    android:background="#fff"
+    android:padding="0dp">
+
+    <Button
+        android:id="@+id/btHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Home" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvSearch"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorBitterSweet"
+        android:background="@color/colorGrassDark"
         android:gravity="center"
         android:text="Search"
         android:textColor="#fff"
-        android:textSize="20dp" />
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSearch"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:hint="Enter Your Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSearch" />
 
     <Button
         android:id="@+id/btSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/colorLavander"
-        android:text="Click To Get Answer On Google"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorBitterSweet"
+        android:text="Search"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/etSearch" />
 
-    <Button
-        android:id="@+id/btHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:background="@color/colorAccent"/>
 </android.support.constraint.ConstraintLayout>
