@@ -17,6 +17,7 @@ public class QuestionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_questions);
 
         btHome = findViewById(R.id.btHome);
+
         btHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

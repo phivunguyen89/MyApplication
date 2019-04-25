@@ -30,7 +30,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.QuestionsActivity"></activity>
+
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,6 +41,7 @@
         <activity android:name=".activity.ProgressActivity" />
         <activity android:name=".activity.SearchActivity" />
         <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.QuestionsActivity"/>
 
         <activity android:name=".activity.KeyNoteActivity" />
         <activity android:name=".activity.VideoActivity" />
