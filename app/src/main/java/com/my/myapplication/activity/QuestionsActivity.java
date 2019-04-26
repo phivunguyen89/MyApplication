@@ -7,9 +7,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.my.myapplication.R;
+import com.my.myapplication.YoutubeModel.YoutubeActivity;
 
 public class QuestionsActivity extends AppCompatActivity {
-    private Button btHome;
+    private Button btHome, btYoutube;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +18,19 @@ public class QuestionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_questions);
 
         btHome = findViewById(R.id.btHome);
+        btYoutube = findViewById(R.id.btYoutube);
 
         btHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuestionsActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        btYoutube.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuestionsActivity.this, YoutubeActivity.class);
                 startActivity(intent);
             }
         });

@@ -30,7 +30,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".YoutubeModel.YoutubeActivity"></activity>
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,11 +38,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".YoutubeModel.YoutubeActivity"/>
         <activity android:name=".activity.ProgressActivity" />
         <activity android:name=".activity.SearchActivity" />
         <activity android:name=".activity.ProfileActivity" />
-        <activity android:name=".activity.QuestionsActivity"/>
-
+        <activity android:name=".activity.QuestionsActivity" />
         <activity android:name=".activity.KeyNoteActivity" />
         <activity android:name=".activity.VideoActivity" />
         <activity android:name=".activity.ShiJuanActivity1" />
