@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 openSearchActivity();
                 break;
             case R.id.ll_Questions:
-                Toast.makeText(this, "Question", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "More", Toast.LENGTH_SHORT).show();
                 openQuestionsActivity();
                 break;
         }
