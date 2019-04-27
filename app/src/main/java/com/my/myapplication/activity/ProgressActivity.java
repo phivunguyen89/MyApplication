@@ -16,9 +16,9 @@ public class ProgressActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress);
-
+        //Assign Home button to go back Home Page
         btHome = findViewById(R.id.btHome);
-
+        //Assign Home button Action
         btHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

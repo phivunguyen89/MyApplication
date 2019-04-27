@@ -6,7 +6,7 @@ import android.os.Bundle;
 import com.my.myapplication.R;
 
 public class InfoActivity extends AppCompatActivity {
-
+    //Display layout InfoActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

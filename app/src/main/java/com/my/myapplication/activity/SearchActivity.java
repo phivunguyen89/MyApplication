@@ -19,11 +19,13 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-
+        //Assign Home button
         btHome = findViewById(R.id.btHome);
+        //Assign Search EditText
         etSearch = findViewById(R.id.etSearch);
+        //Assign Search button
         btSearch = findViewById(R.id.btSearch);
-
+        //Assign Home button action to go back Home page
         btHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +33,7 @@ public class SearchActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        //Assign Search button Action
         btSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

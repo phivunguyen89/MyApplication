@@ -18,10 +18,10 @@ public class MoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_more);
 
-
+        //Find layout by their ID
         ll_Youtube = findViewById(R.id.ll_Youtube);
         ll_Info = findViewById(R.id.ll_MoreInfo);
-
+        //Use intent to open the activity when click the layout
         ll_Info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -21,13 +21,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        //Find layout Id
         llLessons = findViewById(R.id.ll_lessons);
         ll_Profile = findViewById(R.id.ll_Profile);
         ll_Progress = findViewById(R.id.ll_Progress);
         ll_Search = findViewById(R.id.ll_Search);
         ll_Questions = findViewById(R.id.ll_Questions);
-
+        //Set on Click on layout
         llLessons.setOnClickListener(this);
         ll_Profile.setOnClickListener(this);
         ll_Progress.setOnClickListener(this);
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ll_lessons:
+                //Toast message when click layout and open Activity
                 Toast.makeText(this, "Lessons", Toast.LENGTH_SHORT).show();
                 openLessonsActivity();
                 break;
@@ -60,27 +61,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
-
+    //Use intent to open activity
     private void openQuestionsActivity() {
         Intent intent = new Intent(this, MoreActivity.class);
         startActivity(intent);
     }
-
     private void openSearchActivity() {
         Intent intent = new Intent(this, SearchActivity.class);
         startActivity(intent);
     }
-
     private void openProgressActivity() {
         Intent intent = new Intent(this, ProgressActivity.class);
         startActivity(intent);
     }
-
     private void openLessonsActivity() {
         Intent intent = new Intent(this, KeyNoteActivity.class);
         startActivity(intent);
     }
-
     private void openProfileActivity() {
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
