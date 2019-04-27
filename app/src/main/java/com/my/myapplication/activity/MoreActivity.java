@@ -5,32 +5,34 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.my.myapplication.R;
 import com.my.myapplication.YoutubeModel.YoutubeActivity;
 
-public class QuestionsActivity extends AppCompatActivity {
-    private Button btHome, btYoutube;
+public class MoreActivity extends AppCompatActivity {
+    LinearLayout ll_Youtube, ll_Info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_questions);
+        setContentView(R.layout.activity_more);
 
-        btHome = findViewById(R.id.btHome);
-        btYoutube = findViewById(R.id.btYoutube);
 
-        btHome.setOnClickListener(new View.OnClickListener() {
+        ll_Youtube = findViewById(R.id.ll_Youtube);
+        ll_Info = findViewById(R.id.ll_MoreInfo);
+
+        ll_Info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuestionsActivity.this, MainActivity.class);
+                Intent intent = new Intent(MoreActivity.this, InfoActivity.class);
                 startActivity(intent);
             }
         });
-        btYoutube.setOnClickListener(new View.OnClickListener() {
+        ll_Youtube.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuestionsActivity.this, YoutubeActivity.class);
+                Intent intent = new Intent(MoreActivity.this, YoutubeActivity.class);
                 startActivity(intent);
             }
         });

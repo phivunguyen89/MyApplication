@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/youtubePlay"
         android:layout_centerHorizontal="true"
-        android:background="@color/cardview_dark_background"/>
+        android:background="@color/colorGrapeFruitDark"/>
 
 
 

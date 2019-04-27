@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void openQuestionsActivity() {
-        Intent intent = new Intent(this, QuestionsActivity.class);
+        Intent intent = new Intent(this, MoreActivity.class);
         startActivity(intent);
     }
 
