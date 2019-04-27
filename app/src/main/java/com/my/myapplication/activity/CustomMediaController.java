@@ -26,20 +26,20 @@ import io.vov.vitamio.widget.VideoView;
 
 
 public class CustomMediaController extends MediaController {
-    private static final int HIDEFRAM = 0;
+    private static final int HIDEFRAM = 0;//Control the display of the prompt window
     private static final int SHOW_PROGRESS = 2;
 
     private GestureDetector mGestureDetector;
-    private ImageButton img_back;
-    private TextView mFileName;
+    private ImageButton img_back;//back button
+    private TextView mFileName;//file name
     private VideoView videoView;
     private Activity activity;
     private Context context;
     private String videoname;
-    private int controllerWidth = 0;
+    private int controllerWidth = 0;//Set the mediaController height in order to make the horizontal display top displayed at the top of the screen
 
 
-    private View mVolumeBrightnessLayout;
+    private View mVolumeBrightnessLayout;//Prompt window
     private ImageView mOperationBg;
     private TextView mOperationTv;
     private AudioManager mAudioManager;
@@ -47,13 +47,13 @@ public class CustomMediaController extends MediaController {
     private boolean mDragging;
     private MediaPlayerControl player;
 
-    private int mMaxVolume;
+    private int mMaxVolume; //max volume
 
-    private int mVolume = -1;
+    private int mVolume = -1; // current volume
 
     private float mBrightness = -1f;
 
-
+//Return monitor
 
     private OnClickListener backListener = new OnClickListener() {
         public void onClick(View v) {
@@ -68,14 +68,14 @@ public class CustomMediaController extends MediaController {
         public void handleMessage(Message msg) {
             long pos;
             switch (msg.what) {
-                case HIDEFRAM:
+                case HIDEFRAM: //Hidden prompt window
                     mVolumeBrightnessLayout.setVisibility(View.GONE);
                     mOperationTv.setVisibility(View.GONE);
                     break;
             }
         }
     };
-
+//Videoview is used to control the video, etc., activity is to exit
 
 
     public CustomMediaController(Context context, VideoView videoView, Activity activity) {
@@ -91,10 +91,10 @@ public class CustomMediaController extends MediaController {
 
     @Override
     protected View makeControllerView() {
-
+//here mymediacontroller for our custom controller layout file name
         View v = ((LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(getResources().getIdentifier("mymediacontroller", "layout", getContext().getPackageName()), this);
         v.setMinimumHeight(controllerWidth);
-
+//Get control
         img_back = (ImageButton) v.findViewById(getResources().getIdentifier("mediacontroller_top_back", "id", context.getPackageName()));
         mFileName = (TextView) v.findViewById(getResources().getIdentifier("mediacontroller_filename", "id", context.getPackageName()));
 
@@ -109,7 +109,7 @@ public class CustomMediaController extends MediaController {
         mAudioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
         mMaxVolume = mAudioManager
                 .getStreamMaxVolume(AudioManager.STREAM_MUSIC);
-
+//Register event listener
         img_back.setOnClickListener(backListener);
         return v;
     }
@@ -123,7 +123,7 @@ public class CustomMediaController extends MediaController {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         if (mGestureDetector.onTouchEvent(event)) return true;
-
+//Processing gesture end
         switch (event.getAction() & MotionEvent.ACTION_MASK) {
             case MotionEvent.ACTION_UP:
                 endGesture();
@@ -147,9 +147,14 @@ public class CustomMediaController extends MediaController {
             return false;
         }
 
-
+/*Because the custom mediaController is used, when displayed, the mediaController will fill the screen.
+         * So the VideoView click event will be intercepted, so rewrite the controller's gesture event,
+         * Write all the operations in the controller,
+         * Because the click event is intercepted by the controller and cannot be passed to the underlying VideoView,
+         * So the original stand-alone hidden will be invalid, as an alternative,
+         * Add custom hidden/display to onSingleTapConfirmed() in gesture monitoring.*/
         public boolean onSingleTapConfirmed(MotionEvent e) {
-
+//When the gesture ends and the click is over, the controller hides/displays
             toggleMediaControlsVisiblity();
             return super.onSingleTapConfirmed(e);
         }
@@ -159,6 +164,7 @@ public class CustomMediaController extends MediaController {
             return true;
         }
 
+//Sliding event listener
 
         @Override
         public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
@@ -168,7 +174,7 @@ public class CustomMediaController extends MediaController {
             Display disp = activity.getWindowManager().getDefaultDisplay();
             int windowWidth = disp.getWidth();
             int windowHeight = disp.getHeight();
-            if (mOldX > windowWidth * 3.0 / 4.0) {
+            if (mOldX > windowWidth * 3.0 / 4.0) {//Swipe right screen 3/4
                 onVolumeSlide((mOldY - y) / windowHeight);
             } else if (mOldX < windowWidth * 1.0 / 4.0) {
                 onBrightnessSlide((mOldY - y) / windowHeight);
@@ -216,7 +222,7 @@ public class CustomMediaController extends MediaController {
             mOperationBg.setImageResource(R.drawable.volmn_no);
         }
         //DecimalFormat    df   = new DecimalFormat("######0.00");
-        mOperationTv.setText((int) (((double) index / mMaxVolume) * 100) + "%");
+        mOperationTv.setText((int) (((double) index / mMaxVolume) * 100) + "%");//change volume
         mAudioManager.setStreamVolume(AudioManager.STREAM_MUSIC, index, 0);
 
     }
@@ -283,7 +289,7 @@ public class CustomMediaController extends MediaController {
         } else {
             show();
         }
-    }
+    } //hide or show
 
 
     private void playOrPause() {
@@ -293,5 +299,5 @@ public class CustomMediaController extends MediaController {
             } else {
                 videoView.start();
             }
-    }
+    }//play or pause
 }
